@@ -13,17 +13,17 @@
 }
 
 .hero {
-  color: rgb(225, 236, 73);
-  background-color: rgb(36, 35, 35);
   min-height: calc(100vh - 5rem);
+  background: #222;
+  color: white;
 }
 
-span {
-  color: aliceblue;
-  font-size: 2rem;
+.hero span {
+  color: #ef4036;
+  font-size: 30px;
 }
 
 .hero-bin {
-  background: #fff11a;
-  color: black;
+  background: #ef4036;
+  color: white;
 }
