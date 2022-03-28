@@ -1,0 +1,68 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+div {
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.big-img {
+  background: url("./Girl_BigImage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+}
+.small-img {
+  background: url("./images/pexels-mike-190537.jpg");
+  background-repeat: no-repeat;
+  /* background-repeat: repeat-x;
+  background-repeat: repeat-y;
+  background-repeat: space;
+  background-repeat: round;
+  background-repeat: repeat-x; */
+  background-size: cover;
+  background-position: center;
+  /* background-position: 100% 100%; */
+  background-attachment: fixed;
+}
+
+.folder-img {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./Girl_BigImage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+}
+
+/* div {
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+}
+
+.one {
+  background: linear-gradient(red, green, yellow);
+}
+
+.two {
+  background: linear-gradient(orange, yellow, black, teal);
+}
+
+.three {
+  background: linear-gradient(45deg, teal, lightyellow);
+}
+
+.five {
+  background: linear-gradient(blue 08%, yellow);
+} */
