@@ -27,4 +27,9 @@ body {
   margin-bottom: 2rem;
 }
 
-/* left off at 8:28 */
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  border: 2px solid red;
+  max-width: 1170px;
+}
