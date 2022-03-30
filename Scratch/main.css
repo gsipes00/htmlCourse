@@ -1,21 +1,18 @@
-div {
-  border: 3px solid red;
-  background: yellow;
-  margin-top: 40px;
+* {
+  margin: 0;
 }
 
-.one {
-  background: blue;
-  color: white;
+.hero {
+  min-height: 100vh;
+  position: relative;
+  border: 2px solid red;
 }
 
-.two {
-  background: green;
-  color: white;
-}
-
-.special {
-  background: pink;
-  font-size: 20px;
-  color: black;
+.hero-center {
+  border: 2px solid red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 300px;
 }
