@@ -1,18 +1,42 @@
-* {
-  margin: 0;
+:root {
+  --primaryColor: rgb(13, 48, 10);
+  --cl-secondary: rgb(231, 125, 64);
+  --mainTransition: all 2s linear;
+  --mainSpacing: 5px;
+  --fontWeight: 30px;
 }
 
-.hero {
-  min-height: 100vh;
-  position: relative;
-  border: 2px solid red;
+h1 {
+  color: var(--primaryColor);
 }
 
-.hero-center {
-  border: 2px solid red;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 300px;
+h2 {
+  color: var(--primaryColor);
+}
+
+h3 {
+  color: var(--primaryColor);
+  transition: var(--mainTransition);
+}
+
+p {
+  letter-spacing: var(--mainSpacing);
+  transition: var(--mainTransition);
+}
+
+h3:hover {
+  color: var(--cl-secondary);
+}
+
+p:hover {
+  color: var(--cl-secondary);
+}
+
+div {
+  --primaryPurple: purple;
+}
+
+.main-text {
+  color: var(--primaryPurple);
+  font-size: var(--fontWeight);
 }
