@@ -110,6 +110,12 @@ p {
   background: --clr-primaryLight;
 }
 
+/* 
+================================
+HEADER
+================================
+*/
+
 .header {
   min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
@@ -158,4 +164,46 @@ p {
     #e9b949,
     var(--clr-primary)
   );
+}
+
+/* 
+================================
+SKILLS SECTION
+================================
+*/
+
+.skills {
+  background: var(--clr-grey10);
+}
+
+.skill {
+  padding: 2.5rem 0;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.skill-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1.25rem;
+  transition: var(--transition);
+  /* span is inline element, just use "inline-block" for margin-bottom to work */
+  display: inline-block;
+  color: var(--clr-primary);
+}
+
+.skill-text {
+  color: var(--clr-grey5);
+  max-width: 17rem;
+  /* need margin set for left/right after setting max-width */
+  margin: 0 auto;
+}
+
+.skill:hover {
+  background: var(--clr-white);
+  box-shadow: 0 2px var(--clr-primary);
+}
+
+/* as you hover over the skill element, change the skill-icon as ... */
+.skill:hover .skill-icon {
+  transform: translateY(-5px);
 }
