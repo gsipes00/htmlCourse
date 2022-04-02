@@ -118,6 +118,29 @@ is not desired to be floated, you can use this fix. Explained at ~7:30 in video#
   display: table;
 }
 
+.section-title h3 {
+  font-family: var(--ff-secondary);
+  color: var(--clr-primary);
+}
+
+.section-title {
+  margin-bottom: 2rem;
+}
+
+.section-center {
+  padding: 4rem 0;
+  width: 85vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+@media screen and (min-width: 92px) {
+  .section-center {
+    width: 95vw;
+    padding: 4rem 1rem;
+  }
+}
+
 /* 
 ================================
 HEADER
@@ -227,5 +250,50 @@ SKILLS SECTION
   .skill {
     /* float: left; -float is not neccessary here, as it is already declared at 576 px */
     width: 25%;
+  }
+}
+
+/* 
+================================
+ABOUT SECTION
+================================
+*/
+
+.about-img,
+.about-info {
+  padding: 2rem 0;
+}
+
+.about-picture-container {
+  background: var(--clr-primary);
+  border: 0.5rem solid var(--clr-primary);
+  max-width: 30rem;
+  /* extra stuff */
+  /* overflow prevents image from spilling out of div when hover */
+  overflow: hidden;
+}
+
+.about-picture {
+  transition: var(--transition);
+}
+
+.about-picture-container:hover .about-picture {
+  opacity: 0.5;
+  transform: scale(1.2);
+}
+
+.about-text {
+  max-width: 26rem;
+  color: var(--clr-grey5);
+}
+
+@media screen and (min-width: 992px) {
+  .about-img,
+  .about-info {
+    float: left;
+    max-width: 50%;
+  }
+  .about-info {
+    padding: 3rem;
   }
 }
