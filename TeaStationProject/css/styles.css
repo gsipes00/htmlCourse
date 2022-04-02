@@ -109,6 +109,14 @@ p {
   color: var(--clr-primary);
   background: --clr-primaryLight;
 }
+/* clear fix hack for use when floating elements. everything floats left, so if any content
+is not desired to be floated, you can use this fix. Explained at ~7:30 in video# 277 */
+.clearfix::after,
+.clearfix::before {
+  content: "";
+  clear: both;
+  display: table;
+}
 
 /* 
 ================================
@@ -206,4 +214,18 @@ SKILLS SECTION
 /* as you hover over the skill element, change the skill-icon as ... */
 .skill:hover .skill-icon {
   transform: translateY(-5px);
+}
+
+@media screen and (min-width: 576px) {
+  .skill {
+    float: left;
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .skill {
+    /* float: left; -float is not neccessary here, as it is already declared at 576 px */
+    width: 25%;
+  }
 }
