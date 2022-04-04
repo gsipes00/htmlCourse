@@ -143,6 +143,23 @@ is not desired to be floated, you can use this fix. Explained at ~7:30 in video#
 
 /* 
 ================================
+NAVBAR
+================================
+*/
+
+.nav-btn {
+  position: fixed;
+  top: 5%;
+  left: 5%;
+  font-size: 2.5rem;
+  color: var(--clr-primary);
+  z-index: 5;
+  /* turns the cursor to a pointed find when hovering over the nav-btn */
+  cursor: pointer;
+}
+
+/* 
+================================
 HEADER
 ================================
 */
