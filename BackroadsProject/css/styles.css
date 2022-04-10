@@ -252,7 +252,7 @@ Navbar
     padding: 0 0;
   }
   .nav-link {
-    padding: 0 0; 
+    padding: 0 0;
     margin-right: 0.7rem;
   }
   .nav-link:hover {
@@ -273,8 +273,6 @@ Navbar
     color: var(--clr-primary-8);
   }
 }
-
-
 
 /*
 =============== 
@@ -558,6 +556,7 @@ Contact
   background: var(--clr-primary-1);
   color: var(--clr-primary-5);
 }
+
 @media screen and (min-width: 992px) {
   .contact-center {
     display: flex;
@@ -630,10 +629,11 @@ Footer
 .footer {
   background: var(--clr-grey-5);
   text-align: center;
-  padding-left: 2rem; 
-  padding-right: 2rem; 
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
-.footer-links, .footer-icons {
+.footer-links,
+.footer-icons {
   display: flex;
   justify-content: center;
   margin-bottom: 1.5rem;
