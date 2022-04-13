@@ -147,7 +147,7 @@ Cards
   color: var(--primaryColor);
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .cards-center {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -159,4 +159,10 @@ Cards
   .cards-center {
     grid-template-columns: repeat(3, 1fr);
   }
+} */
+
+.cards-center {
+  display: grid;
+  column-gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(368px, 1fr));
 }
