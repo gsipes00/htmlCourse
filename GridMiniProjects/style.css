@@ -97,6 +97,7 @@ Main Navbar
 .main-navbar a:hover {
   color: var(--mainBlack);
 }
+
 @media screen and (min-width: 992px) {
   .main-navbar ul {
     max-width: 1170px;
@@ -107,5 +108,55 @@ Main Navbar
   }
   .main-navbar a {
     text-align: center;
+  }
+}
+
+/* 
+=================
+Cards
+=================
+ */
+
+.title {
+  text-align: center;
+}
+.cards {
+  padding: 4rem 0;
+}
+.cards-center {
+  width: 80vw;
+  max-width: 1170px;
+  margin: 2rem auto;
+  /* border: 3px solid red; */
+}
+.card {
+  border: 1px solid var(--darkGrey);
+  margin-bottom: 3rem;
+}
+.card-info {
+  padding: 1rem;
+}
+.card-footer {
+  background: var(--darkGrey);
+  padding: 0.5rem 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+.card-footer span {
+  color: var(--primaryColor);
+}
+
+@media screen and (min-width: 768px) {
+  .cards-center {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .cards-center {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
