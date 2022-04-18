@@ -59,6 +59,7 @@ Global Styles
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: 1px solid black;
 }
 body {
   font-family: var(--ff-secondary);
@@ -171,6 +172,38 @@ p {
 Navbar
 ===============
 */
+.nav-links {
+  display: none;
+}
+.nav {
+  height: 5rem;
+  padding: 1rem;
+  display: grid;
+  align-items: center;
+  transition: var(--transition);
+  border: 1px solid red;
+}
+.nav-center {
+  border: 2px solid blue;
+  width: 100%;
+  max-width: 1170px;
+  /* after setting max width, setting margin to 0 and auto ensures it stay in the center */
+  margin: 0 auto;
+}
+.nav-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.nav-btn {
+  background: transparent;
+  border-color: transparent;
+  color: var(--clr-primary-5);
+  font-size: 2rem;
+  cursor: pointer;
+  /* justyify-content: space between */
+  justify-self: end;
+}
 
 /*
 =============== 
