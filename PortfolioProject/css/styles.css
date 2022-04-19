@@ -292,7 +292,7 @@ Sidebar
   background: transparent;
   border: transparent;
   transition: var(--transition2);
-  color: #bb2525;
+  color: var(--clr-grey-5);
 }
 .close-btn:hover {
   color: #e66b6b;
