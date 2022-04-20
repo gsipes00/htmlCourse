@@ -130,6 +130,14 @@ p {
   }
 }
 /*  global classes */
+.underline {
+  width: 5rem;
+  height: 0.25rem;
+  margin-bottom: 1.25rem;
+  background: var(--clr-primary-5);
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .btn {
   text-transform: uppercase;
@@ -207,6 +215,9 @@ Navbar
 @media screen and (min-width: 768px) {
   .nav {
     background: var(--clr-primary-10);
+    /* to make the nav bar sticky, my alt */
+    /* position: sticky;
+    top: 0; */
   }
   .nav-btn {
     display: none;
@@ -234,6 +245,23 @@ Navbar
     align-items: center;
   }
 }
+/* fixed navbar */
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--clr-white);
+  z-index: 2;
+  box-shadow: var(--light-shadow);
+}
+
+/* My alternate nav bar color change */
+/* .navbar-fixed {
+  background: var(--clr-white);
+  position: sticky;
+  top: 0;
+} */
 
 /*
 =============== 
@@ -252,7 +280,10 @@ Sidebar
   place-items: center; /* shorthand for align-items: center and justify-content: center */
   transition: var(--transition);
   /* add later */
-  /* transform: translateX(-100%); */
+  transform: translateX(-100%);
+}
+.show-sidebar {
+  transform: translateX(0);
 }
 .sidebar-links {
   text-align: center;
@@ -304,6 +335,33 @@ Sidebar
 Hero
 ===============
 */
+
+.hero .underline {
+  margin-bottom: 0.5rem;
+  margin-left: 0;
+}
+.hero-img {
+  display: none;
+}
+.hero {
+  background: var(--clr-primary-10);
+}
+.hero-center {
+  /* subtracting the navbar height */
+  min-height: calc(100vh - 5rem);
+  display: grid;
+  place-items: center;
+}
+.hero-info {
+  color: var(--clr-grey-1);
+}
+.hero-icons {
+  justify-items: start;
+}
+.hero-btn {
+  margin-top: 1.25;
+}
+
 /* underline added to globals */
 
 /*
