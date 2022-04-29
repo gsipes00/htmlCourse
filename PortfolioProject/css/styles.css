@@ -617,7 +617,7 @@ Connect
   display: grid;
   place-items: center;
 }
-video-banner .section-title {
+.video-banner .section-title {
   margin-bottom: 2rem;
 }
 .video-text {
@@ -625,6 +625,7 @@ video-banner .section-title {
 }
 .video-banner {
   background: var(--clr-primary-10);
+  max-width: 45rem;
   padding: 3rem 5rem 12rem 5rem;
   text-align: center;
   -webkit-clip-path: polygon(
