@@ -792,6 +792,56 @@ Timeline
 Blog
 ===============
 */
+.blog {
+  background: var(--clr-grey-10);
+}
+.card {
+  /* must establish a height, because we will use position absolute later for card front and back */
+  height: 27rem;
+  position: relative;
+  perspective: 1500px;
+}
+.card-front {
+  background: var(--clr-white);
+}
+.card-back {
+  background: var(--clr-primary-10);
+  transform: rotateY(180deg);
+  display: grid;
+  place-items: center;
+}
+.card-side {
+  transition: all 2s linear;
+  /* because card-back is last in the html stack, and because both front and back cards are set to 
+  position aboslute, the card-back is at the top of the document and covers the front from the view
+  this is why we use backface-visibility here */
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius);
+}
+
+.card:hover .card-front {
+  transform: rotateY(-180deg);
+}
+.card:hover .card-back {
+  transform: rotateY(0);
+}
+.card-front img {
+  height: 13rem;
+  object-fit: cover;
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+}
+.card-footer {
+  width: 2rem;
+  height: 2rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
 
 /*
 =============== 
